@@ -1,0 +1,22 @@
+{
+  "name": "react-native-dice",
+  "version": "1.0.0",
+  "description": "Dice made with React Native",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "exp start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dice",
+    "react native"
+  ],
+  "author": "Niko Ruotsalainen",
+  "license": "MIT",
+  "dependencies": {
+    "expo": "23.0.0",
+    "react": "16.1.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-23.0.0.tar.gz"
+  }
+}
