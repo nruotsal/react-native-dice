@@ -15,9 +15,9 @@
   "author": "Niko Ruotsalainen",
   "license": "MIT",
   "dependencies": {
-    "expo": "23.0.0",
-    "react": "16.1.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-23.0.0.tar.gz",
-    "styled-components": "2.2.3"
+    "expo": "29.0.0",
+    "react": "16.4.2",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-29.0.0.tar.gz",
+    "styled-components": "3.4.5"
   }
 }
