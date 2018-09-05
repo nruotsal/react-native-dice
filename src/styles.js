@@ -16,6 +16,6 @@ export const TouchContainer = styled.TouchableWithoutFeedback`
   width: 100%;
 `
 
-export const Dice = styled.Image.attrs({resizeMode: 'contain'})`
+export const Dice = styled.Image.attrs({ resizeMode: 'contain' })`
   width: 100%;
 `
