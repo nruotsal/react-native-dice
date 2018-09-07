@@ -1,19 +1,13 @@
 import Expo from 'expo'
 import React, { Component } from 'react'
 
-import SideOne from '../assets/sides/1.png'
-import SideTwo from '../assets/sides/2.png'
-import SideThree from '../assets/sides/3.png'
-import SideFour from '../assets/sides/4.png'
-import SideFive from '../assets/sides/5.png'
-import SideSix from '../assets/sides/6.png'
-
-import { Container, TouchContainer, Dice } from './styles'
+import { Container, TouchContainer } from './styles'
+import { SideThree, SideOne, SideTwo, SideFour, SideFive, SideSix } from './components/dice/side'
 
 class DiceApp extends Component {
   constructor (props) {
     super(props)
-    this.state = { side: 1 }
+    this.state = { side: 0 }
     this._rollDice = this._rollDice.bind(this)
   }
 
@@ -23,11 +17,11 @@ class DiceApp extends Component {
   }
 
   render () {
-    const side = [SideOne, SideTwo, SideThree, SideFour, SideFive, SideSix][this.state.side]
+    const Side = [SideOne, SideTwo, SideThree, SideFour, SideFive, SideSix][this.state.side]
     return (
       <Container>
         <TouchContainer onPress={this._rollDice}>
-          <Dice source={side} />
+          <Side />
         </TouchContainer>
       </Container>
     )
