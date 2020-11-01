@@ -1,37 +1,42 @@
 import React from 'react'
-import { Svg } from 'expo'
+import { Svg, Rect, Circle } from 'react-native-svg'
 
-const Square = props =>
-  <Svg.Rect {...props} x={4} y={4} width={94} height={94} rx={10} fill="none" stroke="#000000" strokeWidth={5} />
+type DotProps = {
+  cx: number,
+  cy: number
+}
 
-const Dot = props =>
-  <Svg.Circle {...props} r={10} />
+const Dot: React.FC<DotProps> = props =>
+  <Circle {...props} r={10} fill='black' />
 
-const Side = props =>
+const Square = () =>
+  <Rect x={4} y={4} width={94} height={94} rx={10} fill='none' stroke='#000000' strokeWidth={5} />
+
+const Side: React.FC = ({children}) =>
   <Svg height={100} width={100}>
     <Square />
-    {props.children}
+    {children}
   </Svg>
 
-export const SideOne = props =>
+export const SideOne = () =>
   <Side>
     <Dot cx={50} cy={50} />
   </Side>
 
-export const SideTwo = props =>
+export const SideTwo = () =>
   <Side>
     <Dot cx={75} cy={75} />
     <Dot cx={25} cy={25} />
   </Side>
 
-export const SideThree = props =>
+export const SideThree = () =>
   <Side>
     <Dot cx={75} cy={75} />
     <Dot cx={50} cy={50} />
     <Dot cx={25} cy={25} />
   </Side>
 
-export const SideFour = props =>
+export const SideFour = () =>
   <Side>
     <Dot cx={75} cy={75} />
     <Dot cx={75} cy={25} />
@@ -39,7 +44,7 @@ export const SideFour = props =>
     <Dot cx={25} cy={25} />
   </Side>
 
-export const SideFive = props =>
+export const SideFive = () =>
   <Side>
     <Dot cx={75} cy={75} />
     <Dot cx={75} cy={25} />
@@ -48,7 +53,7 @@ export const SideFive = props =>
     <Dot cx={25} cy={25} />
   </Side>
 
-export const SideSix = props =>
+export const SideSix = () =>
   <Side>
     <Dot cx={75} cy={75} />
     <Dot cx={75} cy={50} />
