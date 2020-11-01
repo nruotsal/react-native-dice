@@ -1,11 +1,39 @@
 React Native Dice
 ===
 
+## Prerequisites
+
+* [Node.js](https://nodejs.org/en/) version 12 or later.
+* [Expo](https://expo.io/)
+
+```sh
+npm install expo-cli -g
+```
+
 ## Development
 
-### Setup
+Install dependencies
 
-0. Install [Node.js](https://nodejs.org/en/) and [Expo](https://expo.io/)
-1. Install dependencies `npm install`
-2. Start project `npm start`
-3. Scan QR-code with Expo app
+```sh
+yarn install
+```
+
+Start Expo
+
+```sh
+expo start
+```
+
+## Testing
+
+Run linter
+
+```sh
+yarn lint
+```
+
+Run tests
+
+```sh
+yarn test
+```

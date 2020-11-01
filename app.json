@@ -1,21 +1,12 @@
 {
+  "name": "react-native-dice",
+  "displayName": "react-native-dice",
   "expo": {
     "name": "react-native-dice",
-    "description": "Dice made with React Native",
     "slug": "react-native-dice",
-    "privacy": "public",
-    "sdkVersion": "29.0.0",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "primaryColor": "#cccccc",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
-    }
+    "assetBundlePatterns": [
+      "**/*"
+    ]
   }
 }

@@ -1,27 +1,66 @@
 {
   "name": "react-native-dice",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Dice made with React Native",
   "private": true,
   "main": "./src/index.js",
-  "scripts": {
-    "start": "exp start",
-    "lint": "standard ./src/*",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "dice",
-    "react native"
-  ],
   "author": "Niko Ruotsalainen",
   "license": "MIT",
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "web": "expo start --web",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "standardx ./src/**/*"
+  },
   "dependencies": {
-    "expo": "29.0.0",
-    "react": "16.4.2",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-29.0.0.tar.gz",
-    "styled-components": "3.4.5"
+    "expo": "~39.0.3",
+    "expo-splash-screen": "~0.6.2",
+    "expo-updates": "~0.3.5",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-native": "~0.63.3",
+    "react-native-gesture-handler": "~1.8.0",
+    "react-native-reanimated": "~1.13.1",
+    "react-native-screens": "~2.12.0",
+    "react-native-svg": "12.1.0",
+    "react-native-unimodules": "~0.11.0",
+    "react-native-web": "~0.14.7",
+    "styled-components": "5.2.1"
   },
   "devDependencies": {
-    "standard": "12.0.1"
+    "@babel/core": "~7.12.3",
+    "@types/react": "~16.9.55",
+    "@types/react-dom": "~16.9.9",
+    "@types/react-native": "~0.63.30",
+    "@types/styled-components": "5.1.4",
+    "@typescript-eslint/eslint-plugin": "4.6.0",
+    "@typescript-eslint/parser": "4.6.0",
+    "babel-preset-expo": "~8.3.0",
+    "jest-expo": "~39.0.0",
+    "standardx": "6.0.0",
+    "typescript": "~4.0.5"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "eslintConfig": {
+    "rules": {
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": "error",
+      "no-useless-constructor": "off",
+      "@typescript-eslint/no-useless-constructor": "error",
+      "no-use-before-define": "off",
+      "@typescript-eslint/no-use-before-define": [
+        "error"
+      ]
+    }
+  },
+  "standardx": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint/eslint-plugin"
+    ]
   }
 }
